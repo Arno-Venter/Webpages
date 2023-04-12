@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 10%;
+  margin-left: 1rem;
+  width: 95%;
+}
+
+main {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+}
+
+a:not(#login):hover {
+  color: rgb(218, 47, 47);
+}
+
+.login {
+  padding: 0.5rem;
+  background-color: rgb(218, 47, 47);
+  border-radius: 5px;
+  width: 10rem;
+  text-align: center;
+}
+
+.login a {
+  color: rgb(226, 221, 221);
+}
+
+.login:hover {
+  background-color: rgb(153, 121, 53);
+}
+
+.main_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_header h1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.main_header_brand {
+  color: rgb(218, 47, 47);
+}
+
+.main_nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.main_nav ul li {
+  margin: 0 1rem;
+}
+
+.main_content {
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+}
+
+.main_content_description {
+  width: 40%;
+  margin-top: 2rem;
+}
+
+.main_content_description h1 {
+  font-size: 3rem;
+}
+
+.main_content_description p {
+  font-size: 1.3rem;
+}
+
+.satisfaction {
+  font-weight: bold;
+}
+
+.main_content_form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+#tracking_number {
+  width: 85%;
+  max-width: 300px;
+  flex: 0 0 40px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+#tracking_number:focus-visible {
+  outline: none;
+  border: 1px solid rgb(218, 47, 47);
+}
+
+#submit {
+  width: 40%;
+  flex: 0 0 40px;
+  min-width: 150px;
+  max-width: 150px;
+  margin-top: 0.8rem;
+  background-color: rgb(218, 47, 47);
+  color: rgb(226, 221, 221);
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#submit:hover {
+  background-color: rgb(153, 121, 53);
+  cursor: pointer;
+}
+
+.main_content_scooter_guy {
+  background-image: url("delivery.jpg");
+  background-position: 40% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+}
+
+.statistics {
+  border-radius: 15px;
+  border: 2px solid white;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  width: 98%;
+}
+
+.statistics ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.statistics li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistics li h1 {
+  color: rgb(218, 47, 47);
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.statistics li p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 70rem) {
+  .main_content_description {
+    width: 30%;
+    margin-top: 2rem;
+  }
+
+  .main_content_description h1 {
+    font-size: 4rem;
+    margin-top: 0;
+  }
+
+  .main_content_description p {
+    font-size: 1.7rem;
+  }
+
+  .main_content_scooter_guy {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    margin-left: 10%;
+  }
+}
