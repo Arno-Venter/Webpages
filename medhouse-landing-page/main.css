@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(253, 247, 247);
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 5vh;
+
+  font-size: 0.9rem;
+}
+
+.account-nav a {
+  margin: 1rem 1rem;
+}
+
+.main-header-brand {
+  margin: 1rem 1rem;
+  margin-left: 0;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.main-header-brand span {
+  color: rgb(76, 166, 250);
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 0 1 50vw;
+
+  max-width: 35rem;
+}
+
+.account-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 1 10rem;
+}
+
+#sign-up {
+  min-width: 5rem;
+  padding: 0.5rem 1rem;
+  background-color: rgb(57, 76, 247);
+  border-radius: 10px;
+  color: white;
+}
+
+#sign-up:hover {
+  background-color: rgb(38, 35, 247);
+}
+
+.dropbtn {
+  background-color: rgb(253, 247, 247);
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(76, 166, 250);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn:disabled {
+  color: black;
+  opacity: 1;
+}
